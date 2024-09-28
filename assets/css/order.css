@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    color: var(--text-color);
+    height: 50px;
+}
+.view-btn {
+    position: absolute;
+    margin-top: 100px;
+    right: 10px;
+    z-index: 1000;
+}
+.caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* pickupModal */
+.inp {
+    height: 30px;
+    width: 35%;
+}
+
+.top {
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 100%;
+}
+.view-btn {
+    top: 0;
+    margin-left: auto;
+    height: 30px;
+    width: 200px;
+}
+.pick-btn, .deliv-btn {
+    font-size: 22px;
+    font-weight: 600;
+    height: 45px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pick-btn {
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: var(--touch-color);
+}
+.deliv-btn {
+    border: 1px solid var(--main-color);
+    background: var(--touch-color);
+    color: var(--main-dark);
+    margin-left: -10px;
+}
+.change-link {
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--main-dark);
+    text-decoration: underline;
+}
+#orderul {
+    border-bottom: 1px solid var(--main-color);
+    overflow: hidden;
+  }
+  
+ #order ul li {
+    float: left;
+    display: block;
+    color: var(--text-dark);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+#order ul li:hover, ul li:active {
+    border-bottom: 3px solid var(--main-dark);
+  }
+  
+#order .col-lg-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--main-dark);
+    background: var(--touch-color);
+    font-weight: 600;
+    height: 100px;
+    margin: 19px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+#order .col-lg-2:hover {
+    background: rgba(217, 191, 175, 0.2);
+}
+#order .col-lg-2 h5 {
+    color: var(--main-dark);
+}
+#order .col-lg-2 p {
+    font-size: 18px;
+    font-weight: 900;
+}

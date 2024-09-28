@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+#menu {
+    margin-top: 30px;
+}
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    color: var(--text-color);
+    height: 60px;
+    padding-top: 10px;
+}
+.menu-cont {
+    margin-bottom: -100px;
+    padding: 50px;
+    font-family: "Anek Devanagari", sans-serif;
+}
+.col-lg-3 {
+    margin-bottom: 25px;
+}
+.col-lg-3 h4 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.menu-row {
+    background: var(--touch-color);
+    color: var(--text-dark);
+    margin-bottom: 80px;
+    padding-top: 50px
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.col-lg-3 img {
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+}

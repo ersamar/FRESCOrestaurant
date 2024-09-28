@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESCO Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e0c2166f3a.js" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+            window.location.href = 'security.html';
+        }
+    });
+</script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/club.css">
+  <link rel="stylesheet" href="assets/css/mediaQueries.css">
+  <style>
+    .parallax-section {
+        background-image: url("assets/images/vip.jpeg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+  </style>
+</head>
+<body>
+    <section id="head" class="section">
+        <h2>WELCOM TO FRESCO CLUB !!</h2>
+        <p>Step into a world of elegance and exclusive experiences with FRESCO Club. Whether you're seeking sophisticated social events, luxurious amenities, or a vibrant community of like-minded individuals, FRESCO Club is your destination. Join us to enjoy a unique blend of comfort and style, where every moment is crafted for your enjoyment. Welcome to a place where exceptional memories are made—welcome to FRESCO Club!</p>
+    </section>
+      <main>
+            <!-- Event Calendar -->
+        <section id="upcomingEvent" class="section">
+            <h1>Upcoming Events</h1>
+            <div id="calendar-widget">
+                <iframe src="https://calendar.google.com/calendar/embed?src=en.pk%23holiday%40group.v.calendar.google.com&ctz=UTC" style="border: 0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </section>
+
+        <!-- Membership Information -->
+<section id="membership-info" class="section">
+  <h1 class="mt-5">Membership Information</h1>
+  <p>Discover the benefits of becoming a member and join our exclusive club. Enjoy special discounts, access to VIP areas, and much more!</p>
+  
+  <!-- Membership Tiers -->
+  <div id="membership-tiers" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="container">
+                <div class="card_box silver my-3">
+                <span></span>
+                <div class="content">
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; Basic Access</li>
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; 10% discount</li>
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; $50/year</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="container">
+                <div class="card_box gold my-3">
+                <span></span>
+                <div class="content">
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; All Silver benefits</li>
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; Priority reservations</li>
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; 15% discount</li>
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; $100/year</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="container">
+                <div class="card_box platinum my-3">
+                <span></span>
+                <div class="content">
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; All Gold benefits</li>
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; Exclusive events</li>
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; 20% discount</li>
+                        <li><i class="fa-solid fa-check fa-fade"></i>&nbsp; $150/year</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Membership Application Form -->
+  <div id="membership-application">
+      <h3>Apply for Membership</h3>
+      <form id="membershipForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" autocomplete="off" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" autocomplete="off" required>
+          
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" autocomplete="off" required>
+          
+          <label for="tier">Preferred Membership Tier:</label>
+          <select id="tier" name="tier" required>
+              <option value="Silver">Silver</option>
+              <option value="Gold">Gold</option>
+              <option value="Platinum">Platinum</option>
+          </select>
+          
+          <button type="submit">Apply Now</button>
+      </form>
+  </div>
+
+  <!-- Member Testimonials -->
+  <div id="member-testimonials" class="container mt-5">
+      <div class="row">
+    <h3>What Our Members Say</h3>
+        <div class="col-lg-4">
+            <blockquote>
+                <p>"Becoming a member has been one of the best decisions. The exclusive events are fantastic!"</p>
+                <cite>Jane Doe</cite>
+            </blockquote>
+        </div>
+        <div class="col-lg-4">
+            <blockquote>
+                <p>"The discounts and perks make it so worthwhile. Highly recommend joining!"</p>
+                <cite>John Smith</cite>
+            </blockquote>
+        </div>
+        <div class="col-lg-4">
+            <blockquote>
+                <p>"The discounts and perks make it so worthwhile. Highly recommend joining!"</p>
+                <cite>John Smith</cite>
+            </blockquote>
+        </div>
+      </div>
+  </div>
+
+  <!-- FAQs -->
+  <div id="membership-faq">
+    <h3>Frequently Asked Questions</h3>
+  
+    <button class="accordion">
+      <h5>What is your policy on large groups or private events?</h5><i class="fas fa-plus"></i>
+    </button>
+    <div class="panel">
+      <p>We welcome large groups and offer options for private events. For groups of 8 or more, we recommend making a reservation in advance. For private events or special occasions, please contact us directly to discuss your needs and check availability. We can provide custom menus and arrangements for a memorable experience.</p>
+    </div>
+  
+    <button class="accordion">
+      <h5>How do I upgrade my membership tier?</h5><i class="fas fa-plus"></i>
+    </button>
+    <div class="panel">
+      <p>You can upgrade your membership by contacting our support team or through your member portal.</p>
+    </div>
+  
+    <button class="accordion">
+      <h5>Are pets allowed in the restaurant?</h5><i class="fas fa-plus"></i>
+    </button>
+    <div class="panel">
+      <p>While we love pets, we typically do not allow them inside the restaurant for health and safety reasons. However, we do have a pet-friendly outdoor patio where you are welcome to bring your furry friends. Please check with us in advance to ensure seating availability on the patio.</p>
+    </div>
+  
+    <button class="accordion">
+      <h5>Do you accommodate special dietary requests or allergies?</h5><i class="fas fa-plus"></i>
+    </button>
+    <div class="panel">
+      <p>Yes, we are happy to accommodate special dietary requests and allergies. Please inform us of any dietary restrictions or allergies when you make your reservation or upon arrival. Our staff will assist you in selecting appropriate menu items and ensure that your meal is prepared safely.</p>
+    </div>
+  
+    <button class="accordion">
+      <h5>What payment methods do you accept?</h5><i class="fas fa-plus"></i>
+    </button>
+    <div class="panel">
+      <p>We accept various payment methods, including major credit and debit cards (Visa, MasterCard, American Express), as well as cash. We also accept mobile payments like Apple Pay and Google Pay. If you have any questions about payment options, please feel free to ask our staff.</p>
+    </div>
+  </div>
+</section>
+
+
+        <!-- VIP Lounge -->
+        <section id="vip-lounge" class="section">
+            <h1>VIP Lounge</h1>
+            <p>Experience our luxurious VIP lounge with exclusive services for members. Book your private area and enjoy top-notch amenities.</p>
+            <!-- VIP Lounge Details -->
+        </section>
+        <section id="parallax" class="parallax-section">
+            <!-- <div class="parallax-content">
+                <h2>Experience Unmatched Luxury</h2>
+                <p>Indulge in our exclusive VIP Lounge with exceptional amenities and services.</p>
+            </div> -->
+        </section>
+        
+
+        <!-- Special Offers -->
+        <section id="special-offers" class="section">
+            <h1>Special Offers</h1>
+            <p>Take advantage of our special promotions and discounts available to members. Check out our current offers and save on your next visit.</p>
+             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="offer-timer mt-3">
+                            <h3>BOGO Offer! <i class="bi bi-stars icon-beat"></i></h3>
+                            <p>Buy one meal and get another one free.</p>
+                            <p>Hurry up! Offer ends in:</p>
+                            <div id="countdownBOGO">
+                                <span id="daysBOGO">00</span> Days 
+                                <span id="hoursBOGO">00</span> Hours 
+                                <span id="minutesBOGO">00</span> Minutes 
+                                <span id="secondsBOGO">00</span> Seconds
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="offer-timer mt-3">
+                            <h3>FREE GIFT Offer!</h3>
+                            <p>Receive a free gift with every purchase over $100.</p>
+                            <p>Hurry up! Offer ends in:</p>
+                            <div id="countdownGift">
+                                <span id="daysGift">00</span> Days 
+                                <span id="hoursGift">00</span> Hours 
+                                <span id="minutesGift">00</span> Minutes 
+                                <span id="secondsGift">00</span> Seconds
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="offer-timer mt-3">
+                            <h3>BUNDLE DEALS Offer!</h3>
+                            <p>Purchase our VIP Lounge package and get a complimentary upgrade. You can also get a free trial of one day.</p>
+                            <p>Hurry up! Offer ends in:</p>
+                            <div id="countdownBundle">
+                                <span id="daysBundle">00</span> Days 
+                                <span id="hoursBundle">00</span> Hours 
+                                <span id="minutesBundle">00</span> Minutes 
+                                <span id="secondsBundle">00</span> Seconds
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="offer-timer mt-3">
+                            <h3>LIMITED AVAILABILITY Offer! <i class="bi bi-stars icon-beat"></i></h3>
+                            <p>Only 10 slots available for our exclusive VIP experience at a discounted rate</p>
+                            <p>Hurry up! Offer ends in:</p>
+                            <div id="countdownLimited">
+                                <span id="daysLimited">00</span> Days 
+                                <span id="hoursLimited">00</span> Hours 
+                                <span id="minutesLimited">00</span> Minutes 
+                                <span id="secondsLimited">00</span> Seconds
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Live Music/Entertainment Schedule -->
+        <section id="entertainment-schedule" class="section">
+            <h1>Entertainment Schedule</h1>
+            <p>Find out who’s performing and what entertainment we have planned for the upcoming weeks.</p>
+            <div class="schedule-container">
+                <div class="event-card">
+                    <img src="assets/images/jazzBand.jpg" alt="The Jazzmen Live Band" class="event-image">
+                    <div class="event-details">
+                        <h3>Sept 20 - Live Band: The Jazzmen</h3>
+                        <p>Join us for an unforgettable evening with The Jazzmen. Enjoy smooth jazz and lively performances.</p>
+                        <a href="#" target="_blank" class="more-info">More Info<i class="fas fa-arrow-right arrow"></i></a>                        
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="assets/images/djNight.jpg" alt="DJ Night" class="event-image">
+                    <div class="event-details">
+                        <h3>Sept 27 - DJ Night</h3>
+                        <p>Get ready to dance the night away with our DJ Night featuring the hottest tracks and beats.</p>
+                        <a href="#" target="_blank" class="more-info">More Info<i class="fas fa-arrow-right arrow"></i></a> 
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="assets/images/acousticSarah.jpg" alt="Acoustic Session with Sarah" class="event-image">
+                    <div class="event-details">
+                        <h3>Oct 4 - Acoustic Session with Sarah</h3>
+                        <p>Enjoy a relaxing evening with an acoustic session by the talented Sarah. Perfect for a laid-back night out.</p>
+                        <a href="#" target="_blank" class="more-info">More Info<i class="fas fa-arrow-right arrow"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+
+        <section id="gallery-section" class="section">
+            <h1>Gallery</h1>
+            <p>Take a look at our gallery to see the vibrant atmosphere and past events. Hover over images for a larger view.</p>
+            <div class="gallery-grid">
+                <img src="assets/images/cgal1.jpg" alt="Gallery Image 1">
+                <img src="assets/images/cgal2.jpg" alt="Gallery Image 2">
+                <img src="assets/images/cgal3.jpg" alt="Gallery Image 3">
+                <img src="assets/images/cgal4.jpg" alt="Gallery Image 4">
+                <img src="assets/images/cgal5.jpg" alt="Gallery Image 5">
+                <img src="assets/images/cgal6.jpg" alt="Gallery Image 6">
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section id="newsletter" class="section">
+            <h1>Newsletter Signup</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 news-col">
+                        <form class="news-form">
+                            <span class="title">Subscribe to our newsletter.</span>
+                            <p class="description">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
+                            <div>
+                              <input placeholder="Enter your email" type="email" name="email" id="email-address" autocomplete="off">
+                              <button type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 news-desc">
+                        <p>Stay Ahead with Our Newsletter!
+                            Sign up for our newsletter and be the first to receive exclusive updates, special offers, and insider information directly in your inbox. From exciting events and promotions to the latest news and trends, our newsletter ensures you never miss out on what’s happening. Join our community today and enjoy curated content designed to keep you informed and inspired. Don't miss out—subscribe now and stay connected!</p>
+                            <div class="typewriter">
+                                <div class="slide"><i></i></div>
+                                <div class="paper"></div>
+                                <div class="keyboard"></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Map -->
+        <section id="map" class="section">
+            <h1>Find Us</h1>
+            <div class="container-fluid map-cont">
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE" width="800" height="600" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+
+        <!-- Loyalty Program -->
+        <section id="loyalty-program" class="section">
+            <h1>Loyalty Program</h1>
+            <div class="container-fluid">
+                <p>Our Loyalty Program is designed to reward you for your continued support. Earn points for every purchase, enjoy exclusive discounts, and access special member-only events. Discover the perks of being a loyal customer and start earning rewards today!</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3>What You Have To Do?</h3>
+                        <div class="loyalty-features">
+                            <div class="feature">
+                                <h4><i class="bi bi-flag"></i> Earn Points</h4>
+                                <p>Get points for every dollar spent. More points mean more rewards!</p>
+                            </div>
+                            <div class="feature">
+                                <h4><i class="bi bi-trophy"></i> Exclusive Rewards</h4>
+                                <p>Redeem your points for exclusive rewards, discounts, and gifts.</p>
+                            </div>
+                            <div class="feature">
+                                <h4><i class="bi bi-calendar-event"></i> Member-Only Events</h4>
+                                <p>Access special events and promotions reserved for loyalty program members.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>How It Works?</h3>
+                        <div class="loyalty-features">
+                            <div class="feature">
+                                <h4><i class="bi bi-card-heading"></i> Sign Up</h4>
+                                <p>Sign up for our loyalty program and start earning points.</p>
+                            </div>
+                            <div class="feature">
+                                <h4><i class="fa-solid fa-bars-progress"></i> Keep Track</h4>
+                                <p>Earn points for every purchase and track your progress.</p>
+                            </div>
+                            <div class="feature">
+                                <h4><i class="bi bi-award"></i> Get Prizes</h4>
+                                <p>Redeem your points for rewards, discounts, and exclusive offers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="tel:+1234567890">
+                <button class="button mt-4" type="button">
+                    <span class="button__text">Call Us</span>
+                    <span class="button__icon">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/>
+                    </svg>
+                    </span>
+                </button>
+            </a>
+
+        </section>
+
+        <!-- Dress Code -->
+<section id="dress-code" class="section">
+    <h1>Our Dress Code Policy</h1>
+    <div class="container-fluid dress-code-section">
+        <p>We pride ourselves on offering an elegant and refined atmosphere for our guests. To maintain the ambiance, we kindly request adherence to the following dress code:</p>
+    <ul class="dress-code-guidelines">
+        <li><strong>Smart Casual Attire:</strong> We encourage stylish, yet comfortable clothing that reflects sophistication.</li>
+        <li><strong>Gentlemen:</strong> Collared shirts, tailored pants or jeans, and smart shoes are preferred.</li>
+        <li><strong>Ladies:</strong> Dresses, skirts, blouses, or dressy tops paired with elegant footwear are recommended.</li>
+        <li><strong>Not Permitted:</strong> Sportswear, athletic gear, flip-flops, excessively casual clothing (e.g., beachwear), or any attire that may disrupt the elegant setting.</li>
+    </ul>
+    <p>Thank you for your understanding and cooperation. Should you have any questions about our dress code, please don't hesitate to <a href="contact.html">contact us</a>.</p>
+    </div>
+</section>
+
+        <!-- Social Media Links -->
+  <section id="social-media" class="section">
+    <h1>Follow Us</h1>
+    <div class="container social-cont mt-5">
+        <a href="https://facebook.com/yourclub" target="_blank"><i class="fa-brands fa-square-facebook fb"></i></a>
+        <a href="https://twitter.com/yourclub" target="_blank"><i class="fa-brands fa-square-x-twitter twit"></i></a>
+        <a href="https://youtube.com/yourclub" target="_blank"><i class="fa-brands fa-square-youtube yt"></i></a>
+        <a href="https://instagram.com/yourclub" target="_blank"><i class="fa-brands fa-square-instagram insta"></i></a>
+        <a href="https://threads.com/yourclub" target="_blank"><i class="fa-brands fa-square-threads thr"></i></a>
+    </div>
+</section>
+    </main>
+
+  <!-- footer -->
+   <section id="footerClub">
+    <p class="text-center py-2">© 2024 FRESCO Designed & Developed by ERSA AMAR</p>
+   </section>
+
+   <div id="snackbar"></div>
+
+     <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/club.js"></script>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        var icon = this.querySelector(".fas");
+        
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+          icon.classList.remove("fa-minus");
+          icon.classList.add("fa-plus");
+        } else {
+          panel.style.display = "block";
+          icon.classList.remove("fa-plus");
+          icon.classList.add("fa-minus");
+        }
+      });
+    }
+
+    // formSubmission
+    document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('membershipForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var formData = new FormData(form);
+
+        fetch('database/member.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(result => {
+            showSnackbar(result);
+        })
+        .catch(error => {
+            showSnackbar('Network Error');
+        });
+    });
+
+    function showSnackbar(message) {
+        var snackbar = document.getElementById('snackbar');
+        snackbar.textContent = message;
+        snackbar.className = 'show';
+        setTimeout(function() {
+            snackbar.className = snackbar.className.replace('show', '');
+        }, 3000);
+    }
+});
+    </script>
+
+</body>
+</html>

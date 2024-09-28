@@ -1,0 +1,121 @@
+.abt .story {
+    font-size: 17px;
+    font-weight: 200;
+    width: 340px;
+    text-wrap: wrap;
+    line-height: 1.8;
+    word-spacing: 5px;
+}
+.abt .col-lg-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heritage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.heritage .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    width: 100%;
+    padding: 50px 0;
+}
+.heritage .col-lg-4 {
+    height: 200px;
+    width: 370px;
+}
+.heritage .col-lg-4 p {
+    font-size: 20px;
+    font-weight: 200;
+}
+.heritage .col-lg-4 i {
+    color: var(--main-color);
+}
+.career .col-lg-6 img {
+    height: 550px;
+    width: 450px;
+}
+.abt {
+    width: 100%;
+    background: var(--touch-color);
+}
+
+.career-form {
+    margin: 50px 0;
+}
+.career .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.career-form label {
+    color: var(--main-color);
+}
+
+.custom-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--main-color);
+    font-size: 1rem;
+    color: var(--main-color);
+    background-color: var(--touch-color);
+    transition: all 0.3s ease;
+}
+.custom-input::placeholder {
+    color: var(--main-color);
+}
+.custom-input:focus {
+    outline: none;
+    border-color: var(--main-dark);
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+  .custom-file-upload {
+    border: 2px solid var(--main-color);
+    background: var(--touch-color);
+    padding: 8px 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+.custom-file-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+}
+#fileName::placeholder {
+    color: var(--main-color);
+}
+#fileName, #fileName:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.custom-btn {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: var(--main-dark);
+}
+#join {
+    margin-top: 50px;
+}

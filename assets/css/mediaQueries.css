@@ -1,0 +1,1290 @@
+@media (max-width: 1200px) {
+     body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    .book-btn {
+        height: 50px;
+        width: 160px;
+        font-size: 22px;
+    }
+    .navbar-brand {
+        font-size: 37px;
+    }
+    .nav-link-cart {
+        font-size: 23px;
+        display: inline-flex;
+        margin-left: 10px;
+    }
+    .nav-item>.nav-link {
+        color: var(--text-color) !important;
+    }
+    .slide-top {
+        font-size: 31px;
+    }
+    .slide-topp {
+        font-size: 22px;
+    }
+    .btn-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .res-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .reserve-col, .order-col {
+        width: 50%;
+    }
+    #iconUp {
+        margin-top: -70px;
+    }
+    /* bookTable.html */
+    #bookTable .col-lg-4 {
+        width: 300px;
+    }
+    /* club.html */
+    #head {
+        padding: 10px;
+    }
+    .offer-timer {
+        padding: 10px;
+    }
+    .offer-timer h3 {
+        font-size: 1.6em;
+    }
+    .offer-timer p {
+        font-size: 1.2em;
+    }
+    #countdownBOGO, #countdownGift, #countdownBundle, #countdownLimited {
+        font-size: 1.1em;
+    }
+    #countdownBOGO span, #countdownGift span, #countdownBundle span, #countdownLimited span {
+        margin: 0 5px;
+        padding: 5px;
+    }
+    .gallery-grid img {
+        width: 30%;
+    }
+}
+@media (max-width: 992px) {
+    .col-md-6> .mb-0 {
+        display: none;
+    }
+    .top-bar .col-md-6 {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-toggler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: none;
+        background: var(--text-color) !important;
+        margin-left: auto;
+        height: 50px;
+        width: 60px;
+    }
+    .navbar-toggler-icon {
+        font-size: 29px;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+        border: none;
+    }
+    .navbar-nav {
+        background: var(--text-color);
+        padding: 5px;
+    }
+    .nav-item>.nav-link, .nav-link>.dropdown-toggle {
+        color: var(--text-dark) !important;
+    }
+    .carousel-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        width: 140px;
+        font-size: 20px;
+        font-weight: 500;
+    }  
+    .order-btn {
+        height: 60px;
+        width: 900px;
+        font-size: 22px;
+        padding: 20px 5px;
+        margin-top: -15px;
+    }
+    .order-icon {
+        height: 60px;
+        width: 270px;
+        font-size: 23px;
+        margin-top: -15px;
+    }
+    .desc {
+        font-size: 32px;
+    }
+    #favrt {
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+    }
+    #favrt h1 {
+        font-size: 30px;
+    }
+    .favrt-btn {
+        height: 50px;
+        width: 130px;
+        margin-bottom: 25px;
+        font-size: 21px;
+    }
+    .img1, .img2 {
+        width: 100%;
+        margin: 30px 0;
+        order: 1;
+        height: 300px;
+    }
+    .favrt-col {
+        font-size: 21px;
+        order: 2;
+    }
+    .favrt-row2 {
+        margin: 0;
+    }
+    #gallery {
+        margin: 0;
+        padding-top: 50px;
+        margin-bottom: -180px;
+    }
+    .gallery .gallery-item img {
+        width: 100%;
+    }
+    .reserve-order h1 {
+        font-size: 31px; 
+    }
+    .reserve-order p {
+        font-size: 23px;
+    }
+    .reserve-order {
+        background-image: none !important;
+        padding: 0px;
+    }
+    .reserve-cont, .res-row {
+        display: block;
+        padding: 0;
+    }
+    .reserve-order::before {
+        background: transparent;
+    }
+    .reserve-col, .order-col {
+        height: auto; 
+        width: 100%;
+        padding: 0; 
+        margin: 0;
+    }
+    .res-btn, .ord-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 55px;
+        font-size: 23px;
+    }
+    
+    #chefs, #join {
+        margin: 0;
+    }
+    .member .pic img {
+        height: 500px;
+        width: 100%;
+    }
+    #testimonials {
+        margin-top: 20px;
+        height: 80%;
+    }
+    .swiper-slide {
+        font-size: 26px; 
+    }
+    .swiper-slide img {
+        width: 85px; 
+        height: 85px;
+        margin-bottom: 15px;
+    }
+
+    .swiper-slide h3 {
+        font-size: 28px; 
+        margin-bottom: 8px;
+    }
+
+    .swiper-slide span {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .swiper-slide p {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .mySwipper {
+        padding: 0;
+    }
+    .swipper-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper-pagination-bullet {
+        background-color: #a9a9a9; 
+        opacity: 0.6; 
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--main-dark); 
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet:hover {
+        opacity: 0.8; 
+    }
+    
+    .email-box {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #join #email {
+        width: 70%;
+    }
+    #join h2 {
+        font-size: 28px;
+    }
+    #join label {
+        font-size: 24px;
+    }
+    #join ul li {
+        font-size: 22px;
+    }
+    #join .join-btn {
+        width: 30%;
+    }
+    
+    .join .col-lg-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .up-icon {
+        height: 53px;
+        width: 53px;
+        font-size: 25px;
+    }
+    .footer {
+        font-size: 22px;
+    }
+    /* hour&loca */
+    .hour .col-lg-6 {
+        padding-left: 20px;
+        width: 50%;
+    }
+    #street-view-icon {
+        top: 900px;
+    }
+    /* menu.html */
+    .open-button {
+        font-size: 25px;
+    }
+    /* order.html */
+    .menu .bar {
+        height: 40px;
+    }
+    .order .caption h1 {
+        font-size: 30px;
+    }
+    .pick-btn, .deliv-btn {
+        height: 40px;
+        width: 130px;
+        font-size: 20px;
+    }
+    .order .col-lg-2 {
+        width: 44%;
+    }
+    .order .col-lg-2 h5 {
+        font-size: 20px;
+    }
+    .order-row .col-lg-2 p {
+        font-size: 16px;
+    }
+    /* cart.html */
+    .checkout-btn {
+        margin-bottom: 20px;
+    }
+    /* bookTable.html */
+    #bookTable .col-lg-4 {
+        width: 220px;
+    }
+    .col-lg-4 h2 {
+        font-size: 22px;
+    }
+    
+    .book-cont .col-lg-4 p {
+        font-size: 19px;
+    }
+    #bookTable button {
+        margin-bottom: 50px;
+    }
+    /* career.html */
+    .abt .col-lg-6 {
+        width: 50%;
+    }
+    .abt .col-lg-6 img {
+        width: 400px;
+    }
+    .heritage .col-lg-4 {
+        width: 33%;
+    }
+    .career-form .col-lg-3 {
+        width: 50%;
+    }
+    .career-form .col-lg-3 label, .career-form .col-lg-6 label {
+        font-size: 20px;
+    }
+    /* club.html */
+    #head h2 {
+        font-size: 40px;
+    }
+    #head p {
+        font-size: 25px;
+    }
+    .section {
+        margin: 40px;
+    }
+    main {
+        padding: 10px;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+    main p {
+        font-size: 20px;
+    }
+    #calendar-widget iframe {
+        width: 100%;
+        height: 600px;
+    }
+    #membership-tiers .row .col-lg-4 {
+        width: 33%;
+    }
+    .card_box .content {
+        top: 60%;
+        left: 57%;
+    }
+    #member-testimonials .row .col-lg-4 {
+        width: 33%;
+    }
+    .accordion h5 {
+        font-size: 20px;
+    }
+    #special-offers .row .col-lg-6 {
+        width: 50%;
+    }
+    .schedule-container .event-card {
+        width: 30%;
+    }
+    .gallery-grid img {
+        width: 48%;
+    }
+    #newsletter .row .col-lg-6 {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+    .panel p {
+        font-size: 20px;
+    }
+    .social-cont i {
+        font-size: 70px;
+    }
+}
+@media (max-width: 867px) {
+    .navbar-toggler {
+        height: 50px;
+        width: 60px;
+    }
+    .navbar-toggler-icon {
+        font-size: 29px;
+    }
+    .navbar-nav {
+        padding: 5px;
+    }
+    .gallery .gallery-item img {
+        height: 300px;
+    }
+    /* cart.html */
+    #promoInput, #applyPromoBtn {
+        height: 30px;
+        font-size: 17px;
+    }
+    #promInput {
+        width: 20%;
+    }
+    #aplyPromoBtn {
+        width: 10%;
+    }
+    #checkoutSection h4 {
+        font-size: 20px;
+    }
+    .checkout-btn {
+        width: 180px;
+        font-size: 18px;
+    }
+    /* bookTable.html */
+    #bookTable .col-lg-4 {
+        width: 160px;
+    }
+    .col-lg-4 h2 {
+        font-size: 20px;
+    }
+    
+    .book-cont .col-lg-4 p {
+        font-size: 17px;
+    }
+    /* club.html */
+    #head {
+        padding: 10px;
+    }
+    #head h2 {
+        font-size: 40px;
+    }
+    #head p {
+        font-size: 25px;
+    }
+    .section {
+        margin: 40px;
+    }
+    main {
+        padding: 10px;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+    main p {
+        font-size: 20px;
+    }
+    #calendar-widget iframe {
+        width: 100%;
+        height: 600px;
+    }
+    #membership-tiers .row .col-lg-4 {
+        width: 33%;
+    }
+    .card_box .content {
+        top: 60%;
+        left: 57%;
+    }
+    .offer-timer {
+        padding: 10px;
+    }
+    .offer-timer h3 {
+        font-size: 1.5em;
+    }
+    .offer-timer p {
+        font-size: 1.1em;
+    }
+    #countdownBOGO, #countdownGift, #countdownBundle, #countdownLimited {
+        font-size: 1em;
+    }
+    .accordion h5 {
+        font-size: 18px;
+    }
+    .panel p {
+        font-size: 16px;
+    }
+    .social-cont i {
+        font-size: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .book-btn {
+        height: 40px;
+        width: 150px;
+        font-size: 18px;
+    }
+    .navbar-brand {
+        font-size: 30px;
+    }
+    .navbar-toggler {
+        height: 40px;
+        width: 50px;
+    }
+    .navbar-toggler-icon {
+        font-size: 25px;
+    }
+    .nav-link-cart {
+        font-size: 19px;
+    }
+    .navbar-nav {
+        padding: 5px;
+    }
+    .carousel-inner img {
+        height: 500px;
+    }
+    .slide-top {
+        font-size: 27px;
+    }
+    .slide-topp {
+        font-size: 19px;
+    }
+    .carousel-btn {
+        height: 45px;
+        width: 120px;
+        font-size: 18px;
+    }  
+    .order-btn {
+        height: 50px;
+        width: 800px;
+        font-size: 18px;
+    }
+    .order-icon {
+        height: 50px;
+        font-size: 19px;
+    }
+    .desc {
+        font-size: 28px;
+    }
+    #favrt h1 {
+        font-size: 26px;
+    }
+    .favrt-col {
+        font-size: 17px;
+    }
+    .favrt-btn {
+        height: 40px;
+        width: 120px;
+        font-size: 17px;
+    }
+    .reserve-order h1 {
+        font-size: 27px; 
+    }
+    .reserve-order p {
+        font-size: 19px;
+    }
+    .res-btn, .ord-btn {
+        height: 50px;
+        font-size: 19px; 
+    }
+    .swiper-slide {
+        font-size: 22px; 
+    }
+    .swiper-slide img {
+        width: 82px; 
+        height: 82px;
+    }
+
+    .swiper-slide h3 {
+        font-size: 24px; 
+    }
+
+    .swiper-slide span {
+        font-size: 20px;
+    }
+
+    .swiper-slide p {
+        font-size: 20px;
+    }
+    #joing h2 {
+        font-size: 24px;
+    }
+    #join label {
+        font-size: 20px;
+    }
+    #join ul li {
+        font-size: 18px;
+    }
+    .up-icon {
+        height: 50px;
+        width: 50px;
+        font-size: 21px;
+    }
+    .footer {
+        font-size: 18px;
+    }
+    /* hour&loca */
+    .hour .col-lg-6 h3 {
+        font-size: 20px;
+    }
+    .hour .col-lg-6 p {
+        font-size: 16px;
+    }
+    #street-view-icon {
+        top: 750px;
+    }
+    /* menu.html */
+    .open-button {
+        font-size: 21px;
+    }
+    #myForm .close-btn {
+        font-size: 18px;
+    }
+    #myForm .chat-head h4 {
+        font-size: 18px;
+    }
+    #myForm .chat-head p {
+        font-size: 14px;
+    }
+    #myForm .chat-body {
+        height: 200px;
+    }
+    #myForm .icon-link>i, #myForm .icon-send>i, #myForm .icon-smile>i {
+        font-size: 14px;
+    }
+    /* cart.html */
+    #cartContent table {
+        display: block;
+        width: 100% !important;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    th, td {
+        font-size: 18px;
+        padding: 6px;
+    }
+    .quantity-box input[type=text] {
+        font-size: 12px !important;
+    }
+    
+    .form-check .form-col {
+        width: 100%;
+        padding: 0;
+    }
+    .radio-input {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #placeOrder h3 {
+        font-size: 20px;
+    }
+    #placeOrder h5 {
+        font-size: 18px;
+    }
+    #promoInput, #applyPromoBtn {
+        height: 30px;
+        width: 50%;
+        font-size: 14px;
+    }
+    #checkoutSection h4 {
+        font-size: 16px;
+    }
+    .checkout-btn {
+        width: 120px;
+        font-size: 15px;
+        margin: auto;
+    }
+    .order-options input[type=text], .order-options input[type=time], #requests textarea {
+        width: 100% !important;
+    }
+    #checkoutSection {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* order.html */
+    .order .caption h1 {
+        font-size: 30px;
+    }
+    .pick-btn, .deliv-btn {
+        height: 40px;
+        width: 130px;
+        font-size: 20px;
+    }
+    .time-address {
+        font-size: 14px;
+    }
+    #order ul li {
+        font-size: 14px !important;
+    }
+    .bar {
+        height: 30px;
+    }
+    .order-cont h3 {
+        font-size: 20px;
+    }
+    .order .col-lg-2 {
+        width: 26%;
+    }
+    .order .col-lg-2 h5 {
+        font-size: 16px;
+    }
+    .order-row .col-lg-2 p {
+        font-size: 14px;
+    }
+    /* bookTable.html */
+    #bookTable .col-lg-4 {
+        width: 160px;
+    }
+    .col-lg-4 h2 {
+        font-size: 21px;
+    }
+    
+    .book-cont .col-lg-4 p {
+        font-size: 14px;
+    }
+    /* career.html */
+    .abt .col-lg-6 {
+        width: 50%;
+    }
+    .abt .col-lg-6 img {
+        width: 360px;
+    }
+    .heritage .col-lg-4 {
+        width: 33%;
+    }
+    .career-form .col-lg-3 {
+        width: 50%;
+    }
+    .career-form .col-lg-3 label, .career-form .col-lg-6 label {
+        font-size: 20px;
+    }
+    /* security.html */
+    .left, .right {
+        padding: 30px;
+    }
+    .form-container .form-control input {
+        width: 90%;
+    }
+    .form-container .form-control label {
+        font-size: 17px;
+        margin-left: 5px;
+    }
+    .form-container .form-control input {
+        margin-left: 5px;
+    }
+    .form-container .login-btn, .register-btn {
+        width: 80%;
+    }
+    /* club.html */
+    #head h2 {
+        font-size: 30px;
+    }
+    #head p {
+        font-size: 20px;
+    }
+    .section {
+        margin: 20px;
+    }
+    main h1 {
+        font-size: 25px;
+    }
+    main p {
+        font-size: 18px;
+    }
+    #calendar-widget iframe {
+        height: 500px;
+    }
+    #membership-tiers .row .col-lg-4 {
+        width: 100%;
+    }
+    #member-testimonials .row .col-lg-4 {
+        width: 100%;
+    }
+    .card_box .content {
+        top: 59%;
+        left: 73%;
+    }
+    .offer-timer h3 {
+        font-size: 1.4em;
+    }
+    .offer-timer p {
+        font-size: 1em;
+    }
+    #countdownBOGO, #countdownGift, #countdownBundle, #countdownLimited {
+        font-size: 0.9em;
+    }
+    .accordion h5 {
+        font-size: 16px;
+    }
+    #special-offers .row .col-lg-6 {
+        width: 100%;
+    }
+    .schedule-container .event-card {
+        width: 100%;
+    }
+    .gallery-grid img {
+        width: 100%;
+    }
+    #newsletter .row .col-lg-6 {
+        width: 100%;
+    }
+    .panel p {
+        font-size: 14px;
+    }
+    .social-cont i {
+        font-size: 45px;
+    }
+}
+@media (max-width: 600px) {
+    .book-btn {
+        font-size: 16px;
+    }
+    .navbar-brand {
+        font-size: 27px;
+    }
+    .navbar-toggler {
+        height: 35px;
+        width: 45px;
+    }
+    .navbar-toggler-icon {
+        font-size: 22px;
+    }
+    .nav-link-cart {
+        font-size: 17px;
+        margin-left: 7px;
+    }
+    .navbar-nav {
+        padding: 5px;
+    }
+    .carousel-inner img {
+        height: 500px;
+    }
+    .slide-top {
+        font-size: 25px;
+    }
+    .slide-topp {
+        font-size: 17px;
+    }
+    .carousel-btn {
+        height: 40px;
+        width: 110px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .button-bar {
+        margin-top: -20px;
+    }
+    .order-btn {
+        height: 57px;
+        width: 220px;
+        font-size: 21px;
+    }
+    .order-icon {
+        height: 57px;
+        width: 70px;
+        font-size: 19px;
+    }
+    .desc {
+        font-size: 25px;
+    }
+    #favrt h1 {
+        font-size: 24px;
+    }
+    .img1, .img2 {
+        height: 240px;
+    }
+    .reserve-col, .order-col {
+        width: 100%;
+    }
+    .reservation-form, .reserve-cont, .res-row {
+        margin: 0;
+        padding: 0;
+    }
+    .reserve-order h1 {
+        font-size: 25px; 
+    }
+    .reserve-order p {
+        font-size: 17px;
+    }
+    .res-btn, .ord-btn {
+        height: 45px;
+        font-size: 17px; 
+    }
+    .calendar {
+        width: 100%;
+    }
+    .swiper-slide img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .swiper-slide h3 {
+        font-size: 22px; 
+    }
+
+    .swiper-slide span {
+        font-size: 18px;
+    }
+
+    .swiper-slide p {
+        font-size: 16px;
+    }
+    #joing h2 {
+        font-size: 22px;
+    }
+    #join label {
+        font-size: 16px;
+    }
+    #join ul li {
+        font-size: 16px;
+    }
+    .up-icon {
+        height: 45px;
+        width: 45px;
+        font-size: 19px;
+    }
+    .footer {
+        font-size: 16px;
+    }
+    /* order.html */
+    .order .caption h1 {
+        font-size: 23px;
+    }
+    .order .caption p {
+        font-size: 14px;
+    }
+    .order .view-btn .btn-warning {
+        height: 30px;
+        width: 90px;
+        font-size: 12px !important;
+    }
+    .pick-btn, .deliv-btn {
+        height: 30px;
+        width: 120px;
+        font-size: 16px;
+    }
+    .time-address {
+        font-size: 12px;
+    }
+    #order ul li {
+        display: none;
+    }
+    .order-cont {
+        margin-top: -30px;
+    }
+    .bar {
+        height: 23px;
+    }
+    .order-cont h3 {
+        font-size: 17px;
+    }
+    .order .col-lg-2 {
+        width: 25%;
+    }
+    .order .col-lg-2 h5 {
+        font-size: 15px;
+    }
+    .order-row .col-lg-2 p {
+        font-size: 11px !important;
+    }
+    /* bookTable.html */
+    #bookTable .col-lg-4 {
+        width: 95%;
+    }
+    /* career.html */
+    .abt .col-lg-6 {
+        width: 100%;
+    }
+    .abt .col-lg-6 img {
+        width: 100%;
+    }
+    .heritage .col-lg-4 {
+        width: 100%;
+    }
+    .career-form .col-lg-3 {
+        width: 50%;
+    }
+    .career-form .col-lg-3 label, .career-form .col-lg-6 label {
+        font-size: 20px;
+    }
+    /* security.html */
+    .form-container .form-control {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .book-btn {
+        height: 30px;
+        width: 140px;
+        font-size: 14px;
+    }
+    .navbar-brand {
+        font-size: 25px;
+    }
+    .navbar-toggler {
+        height: 30px;
+        width: 40px;
+    }
+    .navbar-toggler-icon {
+        font-size: 20px;
+    }
+    .nav-link-cart {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .navbar-nav {
+        padding: 5px;
+    }
+    .carousel-inner img {
+        height: 500px;
+    }
+    .slide-top {
+        font-size: 23px;
+    }
+    .slide-topp {
+        font-size: 15px;
+    }
+    .carousel-btn {
+        height: 37px;
+        width: 100px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .button-bar {
+        margin-top: -20px;
+    }
+    .order-btn {
+        height: 50px;
+        width: 150px;
+        font-size: 19px;
+    }
+    .order-icon {
+        height: 50px;
+        width: 40px;
+        font-size: 17px;
+    }
+    .desc {
+        font-size: 20px;
+    }
+    #favrt h1 {
+        font-size: 22px;
+    }
+    .img1, .img2 {
+        height: 220px;
+    }
+    .favrt-col {
+        font-size: 14px;
+    }
+    .favrt-btn {
+        height: 35px;
+        width: 100px;
+        font-size: 15px;
+    }
+    .gallery .gallery-item img {
+        height: 200px;
+    }
+    .reserve-order h1 {
+        font-size: 22px; 
+    }
+    .reserve-order p {
+        font-size: 14px;
+    }
+    .res-btn, .ord-btn {
+        height: 40px;
+        font-size: 16px; 
+    }
+    .swiper-slide {
+        font-size: 18px; 
+    }
+
+    .swiper-slide h3 {
+        font-size: 20px; 
+    }
+
+    .swiper-slide span {
+        font-size: 16px;
+    }
+
+    .swiper-slide p {
+        font-size: 14px;
+    }
+    #join h2 {
+        font-size: 20px;
+    }
+    #join label {
+        font-size: 14px;
+    }
+    #join ul li {
+        font-size: 14px;
+    }
+    .up-icon {
+        height: 40px;
+        width: 40px;
+        font-size: 17px;
+    }
+    .footer {
+        font-size: 14px;
+    }
+    /* hour&loca */
+    .hour .col-lg-6 {
+        width: 100%;
+    }
+    .hour .col-lg-6 h3 {
+        font-size: 20px;
+    }
+    .hour .col-lg-6 p {
+        font-size: 16px;
+    }
+    #street-view-icon {
+        top: 1100px;
+    }
+    /* menu.html */
+    .menu .bar h2 {
+        font-size: 18px;
+    }
+    .open-button {
+        height: 40px;
+        width: 40px;
+        font-size: 17px;
+    }
+    .form-popup {
+        bottom: 85px;
+        height: 250px;
+        width: 200px;
+    }
+    #myForm .close-btn {
+        font-size: 16px;
+    }
+    #myForm .chat-head {
+        padding: 3px;
+    }
+    #myForm .chat-head h4 {
+        font-size: 16px;
+    }
+    #myForm .chat-head p {
+        font-size: 12px;
+    }
+    #myForm .chat-foot {
+        padding: 0;
+    }
+    #myForm .icon-link>i, #myForm .icon-send>i, #myForm .icon-smile>i {
+        font-size: 14px;
+    }
+    #myForm .input-container {
+        width: 200px;
+        margin-left: -1px;
+    }
+    #myForm .input-container input {
+        width: 147px;
+    }
+    #myForm .message.right {
+        height: fit-content;
+        max-width: 25%;
+        padding: 0 5px;
+    }
+    /* order.html */
+    .order .col-lg-2 {
+        padding: 5px 0;
+        width: 22%;
+    }
+    .order .col-lg-2 h5 {
+        font-size: 13px;
+    }
+    /* cart.html */
+    .table-cont table {
+        margin-left: 0;
+    }
+    #placeOrder h3 {
+        font-size: 16px;
+    }
+    #placeOrder h5 {
+        font-size: 14px;
+    }
+    #requests textarea {
+        height: 50px;
+    }
+    .promo-btn {
+        font-size: 15px;
+    }
+    #promoInput, #applyPromoBtn {
+        height: 27px;
+        font-size: 15px;
+    }
+    #promoInput {
+        width: 55%;
+    }
+    #applyPromoBtn {
+        width: 30%;
+    }
+    #checkoutSection {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #checkoutSection h4 {
+        font-size: 16px;
+    }
+    .checkout-btn {
+        width: 90px;
+        font-size: 17px;
+    }
+    /* bookTable.html */
+    .col-lg-4 h2 {
+        font-size: 18px;
+    }
+    #bookTable .form-group {
+        width: 100%;
+    }
+    .book-cont .col-lg-4 p {
+        font-size: 12px;
+    }
+    /* career.html */
+    .career-form .col-lg-3 {
+        width: 100%;
+    }
+    /* security.html */
+    .form-container .form-control {
+        font-size: 12px;
+        width: 100%;
+    }
+    /* club.html */
+    #head h2 {
+        font-size: 25px;
+    }
+    #head p {
+        font-size: 18px;
+    }
+    .section {
+        margin: 10px;
+    }
+    main h1 {
+        font-size: 20px;
+    }
+    main p {
+        font-size: 16px;
+    }
+    #calendar-widget iframe {
+        height: 400px;
+    }
+    .offer-timer h3 {
+        font-size: 1.3em;
+    }
+    .offer-timer p {
+        font-size: 0.8em;
+    }
+    #countdownBOGO, #countdownGift, #countdownBundle, #countdownLimited {
+        font-size: 0.7em;
+    }
+    .accordion h5 {
+        font-size: 14px;
+    }
+    .panel p {
+        font-size: 12px;
+    }
+    .social-cont i {
+        font-size: 40px;
+    }
+}

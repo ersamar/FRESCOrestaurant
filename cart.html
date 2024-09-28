@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/e0c2166f3a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/mediaQueries.css">
+</head>
+<body>
+    <section id="cart">
+    <div class="container table-cont mt-5">
+        <div id="cartContent" class="position-relative">
+            <div id="loading" class="overlay text-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="mt-2">Calculating Total...</p>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Actions</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItemsBody">
+                  <tr>
+                    <td data-label="Item">Item Name</td>
+                    <td data-label="Price">$10.00</td>
+                    <td data-label="Quantity">1</td>
+                    <td data-label="Actions"><button>Edit</button></td>
+                    <td data-label="Subtotal">$10.00</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="container-fluid form-check">
+              <div class="row">
+                <div class="col-lg-6 form-col">
+                  <!-- placeOrder Form -->
+            <form action="" id="placeOrder" class="mt-3">
+              <label for="orderType"><h3>How would you like to get your order ?</h3></label>
+              <div class="radio-input my-3">
+                <input name="type" id="pickup" type="radio" value="pickup">
+                <label for="pickup">Pickup</label>
+                <input name="type" id="delivery" type="radio" value="delivery">
+                <label for="delivery">Delivery</label>
+              </div>
+              <!-- Pickup options -->
+              <div id="pickupOptions" class="order-options" style="display:none;">
+                <input type="radio" id="upto30" name="pickupOption">
+                <label for="upto30">Upto 30 minutes</label><br>
+                <input type="radio" id="scheduleLater" name="pickupOption">
+                <label for="scheduleLater">Schedule for later</label>
+                <!-- schedule options -->
+                <div id="scheduleDetails" class="schedule-details" style="display:none;">
+                  <label for="pickupDate" class="mt-2">Date:</label>
+                  <input type="text" id="pickupDate" name="pickupDate" placeholder="Today" readonly><br>
+                  <label for="pickupTime" class="mt-2">Time:</label>
+                  <input type="time" id="pickupTime" name="pickupTime">
+                </div>
+              </div>
+              <!-- Delivery address -->
+              <div id="deliveryAddress" class="order-options" style="display:none;">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+              </div>
+
+              <!-- suggestions -->
+               <div id="requests" class="my-3">
+                <label for="suggestions" class="mt-2"><h5>Any special request ?</h5></label><br>
+                <textarea name="requests" id="suggestions"></textarea>
+               </div>
+            </form>
+            <div class="discount-section mb-3">
+              <button class="promo-btn"><i class="fa-solid fa-tag"></i>&nbsp;&nbsp; Enter a promo code</button>
+              <div id="promoSection" class="d-none mt-2 d-flex">
+                  <input type="text" id="promoInput" class="mb-2" placeholder="Enter promo code">
+                  <button id="applyPromoBtn">Apply</button>
+                  <p id="promoAppliedText" class="mt-2 text-success d-none"></p>
+              </div>
+          </div>
+                </div>
+                <div class="col-lg-6">
+                  <div id="checkoutSection" class="d-none">
+                    <h4 id="pickupChargeText">Delivery Charges: $1.00</h4>
+                    <h4 id="cartTotal">Grand Total: $0.00</h4>
+                    <button class="checkout-btn my-4">Checkout</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            
+              <!-- emptyCart Message -->
+            <div id="emptyMessage" class="d-none">
+              <h2>Your cart is empty</h2>
+                <div class="🤚 my-5">
+	                <div class="👉"></div>
+	                <div class="👉"></div>
+	                <div class="👉"></div>
+	                <div class="👉"></div>
+	                <div class="🌴"></div>		
+	                <div class="👍"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+     <!-- joinSection -->
+  <section id="join" class="join py-5">
+    <div class="container">
+      <div class="row d-flex justify-content-around">
+        <div class="col-lg-6 mb-4">
+          <h2 class="join-heading">Join the FRESCO Club & Get $10 off Your Next Visit</h2>
+          <form action="">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email*</label>
+              <div class="input-group email-box">
+                <input type="email" id="email" placeholder="Enter your email*">
+                <button class="join-btn">Join</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-2 mb-4">
+          <h5 class="join-heading">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="menu.html" target="_blank">Menu</a></li>
+            <li><a href="career.html" target="_blank">About</a></li>
+            <li><a href="order.html" target="_blank">Order Online</a></li>
+            <li><a href="bookTable.html" target="_blank">Reserve a Table</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 mb-4">
+          <h5 class="join-heading">Address</h5>
+          <ul class="list-unstyled">
+            <li>A108 Adam Street</li>
+            <li>New York, NY 535022</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 mb-4">
+          <h5 class="join-heading">Follow Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="iconUp">
+    <div class="icon-div d-flex justify-content-end ms-auto">
+      <a href="#cart" class="up-icon mb-3">
+        <i class="fa-solid fa-arrow-up fa-beat"></i></a>
+    </div>
+  </section>
+
+  <!-- footer -->
+   <section id="footer" class="footer">
+    <p class="text-center py-2">© 2024 FRESCO Designed & Developed by ERSA AMAR</p>
+   </section>
+
+   <!-- chatBox -->
+   <button class="open-button" onclick="openForm()"><i class="fa-brands fa-rocketchat fa-beat"></i></button>
+
+   <div class="form-popup" id="myForm">
+       <form action="" class="form-container">
+         <div class="chat-head">
+             <div class="caption">
+                 <h4 class="d-flex justify-content-start">FRESCO</h4>
+                 <p><i class="fa-solid fa-circle" style="color: green; font-size: 11px;"></i>&nbsp;We'll reply as soon as we can</p>
+             </div>
+             <button type="button" class="close-btn" onclick="closeForm()"><i class="fa-solid fa-xmark"></i></button>
+         </div>
+         <div class="chat-body"></div>
+         <div class="chat-foot">
+           <div class="input-container">
+               <input type="text" placeholder="Type a message..." id="messageInput" onfocus="showSendIcon()" onblur="hideSendIcon()"/>
+               <button type="button" class="icon-smile"><i class="fa-solid fa-face-smile"></i></button>
+               <button type="button" class="icon-link" id="linkIcon" onclick="document.getElementById('fileInput').click();"><i class="fa-solid fa-link"></i></button>
+               <input type="file" id="fileInput" style="display: none;" onchange="handleFileSelection(event)" />
+               <a id="fileLink" href="#" target="_blank" style="display: none;"></a>
+               <button type="button" class="icon-send" id="sendIcon" style="display: none;"><i class="fa-solid fa-paper-plane"></i></button>
+           </div>
+           <img id="messageImage" alt="Image preview" style="display: none;" />
+       </div>                    
+       </form>
+     </div>
+     <div id="snackbar"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const pickupRadio = document.getElementById('pickup');
+    const deliveryRadio = document.getElementById('delivery');
+    const pickupOptions = document.getElementById('pickupOptions');
+    const deliveryAddress = document.getElementById('deliveryAddress');
+    const scheduleLaterRadio = document.getElementById('scheduleLater');
+    const scheduleDetails = document.getElementById('scheduleDetails');
+
+    pickupRadio.addEventListener('change', function() {
+        if (pickupRadio.checked) {
+            pickupOptions.style.display = 'block';
+            deliveryAddress.style.display = 'none';
+        }
+    });
+
+    deliveryRadio.addEventListener('change', function() {
+        if (deliveryRadio.checked) {
+            deliveryAddress.style.display = 'block';
+            pickupOptions.style.display = 'none';
+        }
+    });
+
+    scheduleLaterRadio.addEventListener('change', function() {
+        if (scheduleLaterRadio.checked) {
+            scheduleDetails.style.display = 'block';
+        }
+    });
+
+    // Hide schedule details when other pickup options are selected
+    document.getElementById('upto30').addEventListener('change', function() {
+        scheduleDetails.style.display = 'none';
+    });
+
+    // Form submission to database
+    document.querySelector('.checkout-btn').addEventListener('click', function() {
+        // Check if any pickup option is selected
+        const pickupOption = document.querySelector('input[name="pickupOption"]:checked')?.value || '';
+        
+        // Ensure `orderType` is selected
+        const orderType = document.querySelector('input[name="type"]:checked')?.value || '';
+
+        // Get values from form
+        const pickupDate = document.getElementById('pickupDate').value;
+        const pickupTime = document.getElementById('pickupTime').value;
+        const deliveryAddress = document.getElementById('address')?.value || '';
+        const specialRequests = document.getElementById('suggestions')?.value || '';
+
+        // Log pickupOption for debugging
+        console.log('Pickup Option:', pickupOption);
+
+        // Get table data
+        let cartItems = [];
+        document.querySelectorAll('#cartItemsBody tr').forEach(row => {
+            const itemName = row.querySelector('td')?.innerText || '';
+            const itemPrice = parseFloat(row.querySelector('.item-price')?.innerText.replace('$', '') || '0');
+            const itemQuantity = parseInt(row.querySelector('.quant-inp')?.value || '0');
+            cartItems.push({
+                name: itemName,
+                price: itemPrice,
+                quantity: itemQuantity
+            });
+        });
+
+        const totalAmount = parseFloat(document.getElementById('cartTotal')?.innerText.replace('Grand Total: $', '') || '0');
+
+        const orderData = {
+            orderType: orderType,
+            pickupOption: pickupOption,
+            pickupDate: pickupDate,
+            pickupTime: pickupTime,
+            deliveryAddress: deliveryAddress,
+            specialRequests: specialRequests,
+            totalAmount: totalAmount,
+            cartItems: cartItems
+        };
+
+        fetch('database/orders.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(orderData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showSnackbar('Order placed successfully');
+                localStorage.removeItem('cartItems');
+                setTimeout(() => location.reload(), 2000);
+            } else {
+                showSnackbar('Failed to place order: ' + data.message);
+            }
+        })
+        .catch(error => {
+            showSnackbar('Error: ' + error.message);
+        });
+    });
+
+    function showSnackbar(message) {
+        const snackbar = document.createElement('div');
+        snackbar.className = 'snackbar';
+        snackbar.textContent = message;
+        document.body.appendChild(snackbar);
+        setTimeout(() => {
+            snackbar.classList.add('show');
+        }, 100);
+        setTimeout(() => {
+            snackbar.classList.remove('show');
+            setTimeout(() => {
+                document.body.removeChild(snackbar);
+            }, 300);
+        }, 3000);
+    }
+});
+
+  </script>    
+</body>
+</html>

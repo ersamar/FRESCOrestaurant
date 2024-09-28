@@ -1,0 +1,51 @@
+#hour {
+    margin-top: 30px;
+}
+.hour .col-lg-6 {
+    padding-left: 100px;
+}
+.hour .col-lg-6 p {
+    font-size: 20px;
+    font-weight: 200 !important;
+}
+#map {
+    height: 100vh;
+    width: 100%;
+    cursor: default;
+    position: relative;
+}
+.custom-control {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.custom-control button {
+    display: block;
+    margin-bottom: 5px;
+    width: 100px;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#street-view-icon {
+    position: absolute;
+    top: 800px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+#street-view-icon img {
+    height: 50px;
+    width: 30px;
+    transform: rotate(-10deg);
+    transition: transform 0.3s ease;
+}
+#street-view-icon img:hover {
+    height: 50px;
+    width: 30px;
+    transform: rotate(0deg); 
+}
+#join {
+    margin: -20px 0;
+}
